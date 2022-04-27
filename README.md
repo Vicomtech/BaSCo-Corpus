@@ -59,15 +59,14 @@ a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 ## REFERENCE
 
-
-If you use this corpus, please cite the following [paper](https://):
-
-```
+To be published:
 
 ```
+Aguirre, M., García-Sardiña, L., Serras, M., Méndez, A., and López, J. (2022).BaSCo: An Annotated Basque-Spanish Code-Switching Corpus for Natural
+Language Understanding. In *LREC*.
+```
 
-For any further information about the corpus, please refer to the mentioned
-paper.
+For any further information about the corpus, please refer to the mentioned paper.
 
 
 ***
