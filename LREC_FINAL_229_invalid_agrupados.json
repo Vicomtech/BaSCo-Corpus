@@ -1,0 +1,5536 @@
+[
+    {
+        "domain": "generic",
+        "intents": [
+            "social_saludo"
+        ],
+        "source_lang": "es",
+        "referent": "buenas noches",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "gabon, estas ahí?",
+                "entities": [],
+                "lang_proportion": "balanced"
+            },
+            {
+                "text": "aupa, buenas noches",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_enviar-quien",
+            "informar_tramite"
+        ],
+        "source_lang": "eu",
+        "referent": "nire bikoteak jasoko al ditu?",
+        "entities": [
+            {
+                "entity": "enviar-quien",
+                "value": "bikoteak",
+                "normative_value": "conyuge",
+                "start": 5,
+                "end": 12,
+                "type": "bounded"
+            },
+            {
+                "entity": "tramite",
+                "value": "jasoko",
+                "normative_value": "recepcionar",
+                "start": 14,
+                "end": 19,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "nire parejak rekojiduko al ditu? ",
+                "entities": [
+                    {
+                        "entity": "enviar-quien",
+                        "value": "parejak",
+                        "normative_value": "conyuge",
+                        "start": 5,
+                        "end": 11,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "tramite",
+                        "value": "rekojiduko",
+                        "normative_value": "recepcionar",
+                        "start": 13,
+                        "end": 22,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            },
+            {
+                "text": "mi pareja lo rekojera?",
+                "entities": [
+                    {
+                        "entity": "enviar-quien",
+                        "value": "pareja",
+                        "normative_value": "conyuge",
+                        "start": 3,
+                        "end": 8,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "tramite",
+                        "value": "rekojera",
+                        "normative_value": "recepcionar",
+                        "start": 13,
+                        "end": 20,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_tramitadoPor",
+            "informar_tituloTramite"
+        ],
+        "source_lang": "eu",
+        "referent": "delkarazio-likidazioa hiru hilean behin izapidetzen duenak?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "",
+                "entities": [],
+                "lang_proportion": "balanced"
+            },
+            {
+                "text": "declaración de la renta que es de tres meses?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            },
+            {
+                "text": "la declaración-liquidación izañidatzen cada tres meses?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "saludo",
+            "informar_contexto-subvenciones",
+            "informar_estadoSubvencion"
+        ],
+        "source_lang": "es",
+        "referent": "buenas, quería saber las subvenciones que hay dentro de plazo",
+        "entities": [
+            {
+                "entity": "estadoSubvencion",
+                "value": "dentro de plazo",
+                "normative_value": "dentro-de-plazo",
+                "start": 46,
+                "end": 60,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "epe barruan dauden laguntzak ezagutu nahi nituzke",
+                "entities": [
+                    {
+                        "entity": "estadoSubvencion",
+                        "value": "Epe barruan",
+                        "normative_value": "dentro-de-plazo",
+                        "start": 0,
+                        "end": 10,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            },
+            {
+                "text": "buenas quería saber las subvenciones que hay dentro de plazo",
+                "entities": [
+                    {
+                        "entity": "estadoSubvencion",
+                        "value": "dentro de plazo",
+                        "normative_value": "dentro-de-plazo",
+                        "start": 45,
+                        "end": 59,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_solicitudPorInternet",
+            "informar_tituloTramite"
+        ],
+        "source_lang": "es",
+        "referent": "puedo pedir mis datos fiscales por internet",
+        "entities": [
+            {
+                "entity": "tituloTramite",
+                "value": "datos fiscales",
+                "normative_value": "857",
+                "start": 16,
+                "end": 29,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "datu fiskalak interneten eskatu ditzaket",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "datu fiskalak",
+                        "normative_value": "857",
+                        "start": 0,
+                        "end": 12,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            },
+            {
+                "text": "nere datu fiskalak internetez eskatu ditzaket",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "datu fiskalak",
+                        "normative_value": "857",
+                        "start": 5,
+                        "end": 17,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_contexto-departamentos"
+        ],
+        "source_lang": "eu",
+        "referent": "bulegoak",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "bulegoak",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            },
+            {
+                "text": "las bulego",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_listado"
+        ],
+        "source_lang": "es",
+        "referent": "cuáles hay?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "cuáles daude?",
+                "entities": [],
+                "lang_proportion": "balanced"
+            },
+            {
+                "text": "zeintzuk daude?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_ropa"
+        ],
+        "source_lang": "es",
+        "referent": "me gustaría saber qué tipo de ropa llevas",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "jakin nahi dut ze arropa daukazun jantzita",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            },
+            {
+                "text": "zer arropa tipo daramazun jakitea gustatuko litzaidake",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            },
+            {
+                "text": "gustatuko litzaidake jakitea ze erropa tipo daramazun",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            },
+            {
+                "text": "gustatuko litzaidake jakitea ze arropa tipo daramazun",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            },
+            {
+                "text": "gustatuko litzaidake zein erropa tipo daramazun jakitea",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_normativa"
+        ],
+        "source_lang": "eu",
+        "referent": "zein dira aplikatzen diren legeak?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "¿cuáles son las leyes que se aplican?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            },
+            {
+                "text": "zeintzu dira aplikatzen diren legeak?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_departamento",
+            "informar_tipo-oficina"
+        ],
+        "source_lang": "es",
+        "referent": "a qué departamento pertenece el gaztegunea?",
+        "entities": [
+            {
+                "entity": "tipo-oficina",
+                "value": "gaztegunea",
+                "normative_value": "gaztegunea",
+                "start": 32,
+                "end": 41,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "de qué sección es el gaztegune?",
+                "entities": [
+                    {
+                        "entity": "tipo-oficina",
+                        "value": "gaztegune",
+                        "normative_value": "gaztegunea",
+                        "start": 21,
+                        "end": 29,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            },
+            {
+                "text": "zer departamenturi dagokio gazteguneak?",
+                "entities": [
+                    {
+                        "entity": "tipo-oficina",
+                        "value": "gazteguneak",
+                        "normative_value": "gaztegunea",
+                        "start": 27,
+                        "end": 37,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_enviar-como",
+            "informar_documento"
+        ],
+        "source_lang": "es",
+        "referent": "cómo se envían las claves",
+        "entities": [
+            {
+                "entity": "documento",
+                "value": "claves",
+                "normative_value": "claves-renta",
+                "start": 19,
+                "end": 24,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "nola bidaltzen dira gakoak?",
+                "entities": [
+                    {
+                        "entity": "documento",
+                        "value": "gakoak",
+                        "normative_value": "claves-renta",
+                        "start": 20,
+                        "end": 25,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            },
+            {
+                "text": "nola se bidalduan klabeak",
+                "entities": [
+                    {
+                        "entity": "documento",
+                        "value": "klabeak",
+                        "normative_value": "claves-renta",
+                        "start": 18,
+                        "end": 24,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_canal",
+            "informar_tramite"
+        ],
+        "source_lang": "eu",
+        "referent": "ze kanaletatik bidaltzen dira?",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "bidaltzen",
+                "normative_value": "enviar",
+                "start": 15,
+                "end": 23,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "zein kanaletatik bidaltzen dira?",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "bidaltzen",
+                        "normative_value": "enviar",
+                        "start": 17,
+                        "end": 25,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            },
+            {
+                "text": "zein kanaletik bidaltzen dira?",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "bidaltzen ",
+                        "normative_value": "enviar",
+                        "start": 15,
+                        "end": 23,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_horario",
+            "informar_departamento"
+        ],
+        "source_lang": "eu",
+        "referent": "noiz irekitzen du ogasuneko bulegoak?",
+        "entities": [
+            {
+                "entity": "departamento",
+                "value": "Ogasuneko",
+                "normative_value": "hacienda-finanzas",
+                "start": 18,
+                "end": 26,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "cuándo abre la oficina de sanidad?",
+                "entities": [
+                    {
+                        "entity": "departamento",
+                        "value": "Sanidad",
+                        "normative_value": "hacienda-finanzas",
+                        "start": 26,
+                        "end": 32,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            },
+            {
+                "text": "noiz abritzen da ogasuneko bulegoa?",
+                "entities": [
+                    {
+                        "entity": "departamento",
+                        "value": "Ogasuneko",
+                        "normative_value": "hacienda-finanzas",
+                        "start": 17,
+                        "end": 25,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_ocupado"
+        ],
+        "source_lang": "eu",
+        "referent": "hitz egin dezakezu orain?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "¿puedes hablar ahora?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            },
+            {
+                "text": "¿puedes hitz egituar ahora?",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_contexto-tramites",
+            "informar_tituloTramite"
+        ],
+        "source_lang": "es",
+        "referent": "quería saber sobre el tema de las residencias",
+        "entities": [
+            {
+                "entity": "tituloTramite",
+                "value": "residencias",
+                "normative_value": "855",
+                "start": 34,
+                "end": 44,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "egoitzen inguruan jakin nahiko nuke",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "Egoitzen",
+                        "normative_value": "855",
+                        "start": 0,
+                        "end": 7,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            },
+            {
+                "text": "residentzien tema nahiko nuke saber",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "residentzien",
+                        "normative_value": "855",
+                        "start": 0,
+                        "end": 11,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_adios"
+        ],
+        "source_lang": "eu",
+        "referent": "gero arte",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "hasta gero",
+                "entities": [],
+                "lang_proportion": "balanced"
+            },
+            {
+                "text": "luego arte",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_robot"
+        ],
+        "source_lang": "es",
+        "referent": "eres un bot de verdad?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "bot bat zara, ez?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            },
+            {
+                "text": "benetako bot bat zara?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_adios",
+            "social_gracias"
+        ],
+        "source_lang": "eu",
+        "referent": "agur, eskerrik asko.",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "adiour, muchos eskerrik",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "transport",
+        "intents": [
+            "informar_dni"
+        ],
+        "source_lang": "es",
+        "referent": "52486971l",
+        "entities": [
+            {
+                "entity": "dni",
+                "value": "52486971L",
+                "normative_value": "",
+                "start": 0,
+                "end": 8,
+                "type": "free"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "52486971l",
+                "entities": [
+                    {
+                        "entity": "dni",
+                        "value": "52486971L",
+                        "normative_value": "",
+                        "start": 0,
+                        "end": 8,
+                        "type": "free"
+                    }
+                ],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_amigo"
+        ],
+        "source_lang": "eu",
+        "referent": "izan nire emaztea",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "izan zaitez nire novia",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_amigo"
+        ],
+        "source_lang": "es",
+        "referent": "podemos ser amigos",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "somos lagunas?",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_ocupado"
+        ],
+        "source_lang": "es",
+        "referent": "tienes un momento?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "momentu bat duzu?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "informar_tramite",
+            "preguntar_plazo"
+        ],
+        "source_lang": "es",
+        "referent": "estoy dentro del periodo de confirmación de la renta de propuesta etxean?",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "confirmación",
+                "normative_value": "confirmar",
+                "start": 28,
+                "end": 39,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": "propuesta etxean",
+                "normative_value": "renta-etxean",
+                "start": 56,
+                "end": 71,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "cual es el epe para zuzenduar la propuesta de la renta en casa?",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "zuzenduar",
+                        "normative_value": "confirmar",
+                        "start": 20,
+                        "end": 28,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "renta en casa",
+                        "normative_value": "renta-etxean",
+                        "start": 49,
+                        "end": 61,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "negacion"
+        ],
+        "source_lang": "eu",
+        "referent": "jada ez dago akatsik",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "sin akatsa",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "preguntar_plazo"
+        ],
+        "source_lang": "es",
+        "referent": "qué días tendrá las claves",
+        "entities": [
+            {
+                "entity": "documento",
+                "value": "claves",
+                "normative_value": "claves-renta",
+                "start": 20,
+                "end": 25,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "qué egunetan teniduko dituzu klabeak",
+                "entities": [
+                    {
+                        "entity": "documento",
+                        "value": "klabeak",
+                        "normative_value": "claves-renta",
+                        "start": 29,
+                        "end": 35,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "afirmativo"
+        ],
+        "source_lang": "es",
+        "referent": "bien",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "ze ondo!",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_tramite",
+            "preguntar_enviar-como"
+        ],
+        "source_lang": "es",
+        "referent": "cómo las vais a enviar?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "como las bidalituais?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_tramite"
+        ],
+        "source_lang": "es",
+        "referent": "el trámite de recepcionar",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "recepcionar",
+                "normative_value": "recepcionar",
+                "start": 14,
+                "end": 24,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "jasotzeko tramiteak",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "Jasotzeko",
+                        "normative_value": "recepcionar",
+                        "start": 0,
+                        "end": 8,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_tramite"
+        ],
+        "source_lang": "eu",
+        "referent": "baina non agertzen dira?",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "agertzen",
+                "normative_value": "solicitar",
+                "start": 10,
+                "end": 17,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "pero dónde se gertatua?",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "gertatua",
+                        "normative_value": "solicitar",
+                        "start": 14,
+                        "end": 21,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "preguntar_enviar-quien"
+        ],
+        "source_lang": "eu",
+        "referent": "nire emazteak jasoko al ditu gakoak?",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "jasoko",
+                "normative_value": "recepcionar",
+                "start": 14,
+                "end": 19,
+                "type": "bounded"
+            },
+            {
+                "entity": "enviar-quien",
+                "value": "emazteak",
+                "normative_value": "conyuge",
+                "start": 5,
+                "end": 12,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": "gakoak",
+                "normative_value": "claves-renta",
+                "start": 29,
+                "end": 34,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "nere emazteak klabeak ebatzi ditu?",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "ebatzi",
+                        "normative_value": "recepcionar",
+                        "start": 22,
+                        "end": 27,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "enviar-quien",
+                        "value": "emazteak ",
+                        "normative_value": "conyuge",
+                        "start": 5,
+                        "end": 12,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "klabeak",
+                        "normative_value": "claves-renta",
+                        "start": 14,
+                        "end": 20,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "cambiar-documento"
+        ],
+        "source_lang": "es",
+        "referent": "cuáles son los documentos",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zeintzuk dita dokumentuak?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "transport",
+        "intents": [
+            "faq-recarga-webapp"
+        ],
+        "source_lang": "eu",
+        "referent": "nola eta noiz egongo da erabilgarri internet/app bidez egindako diru-karga?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "nun egiten web/app rekargen aktibazioa",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_medio-identificacion"
+        ],
+        "source_lang": "es",
+        "referent": "tengo la bak",
+        "entities": [
+            {
+                "entity": "medio-identificacion",
+                "value": "bak",
+                "normative_value": "bak",
+                "start": 9,
+                "end": 11,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "baka daukat",
+                "entities": [
+                    {
+                        "entity": "medio-identificacion",
+                        "value": "Baka",
+                        "normative_value": "bak",
+                        "start": 0,
+                        "end": 3,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_departamento"
+        ],
+        "source_lang": "es",
+        "referent": "departamento de cooperación por favor",
+        "entities": [
+            {
+                "entity": "departamento",
+                "value": "cooperación",
+                "normative_value": "cultura-cooperacion-juventud-deportes",
+                "start": 16,
+                "end": 26,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "kooperazio departamentua mesedez",
+                "entities": [
+                    {
+                        "entity": "departamento",
+                        "value": "Kooperazio",
+                        "normative_value": "cultura-cooperacion-juventud-deportes",
+                        "start": 0,
+                        "end": 9,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_tituloTramite",
+            "preguntar_oficinasDeAtencionPresencial"
+        ],
+        "source_lang": "es",
+        "referent": "email de departamento de cultura de kosta urola",
+        "entities": [
+            {
+                "entity": "departamento",
+                "value": "cultura",
+                "normative_value": "cultura-cooperacion-juventud-deportes",
+                "start": 25,
+                "end": 31,
+                "type": "bounded"
+            },
+            {
+                "entity": "comarca",
+                "value": "urola",
+                "normative_value": "urola-kosta",
+                "start": 42,
+                "end": 46,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "emaila departamentukoa de kultura kosta urolakoa",
+                "entities": [
+                    {
+                        "entity": "departamento",
+                        "value": "kultura",
+                        "normative_value": "cultura-cooperacion-juventud-deportes",
+                        "start": 26,
+                        "end": 32,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "comarca",
+                        "value": "urolakoa",
+                        "normative_value": "urola-kosta",
+                        "start": 40,
+                        "end": 47,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_enviar-quien",
+            "informar_tramite",
+            "informar_documento"
+        ],
+        "source_lang": "es",
+        "referent": "a quién se le enviarán las claves de la renta?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "a quién le bidalirán las gakos de la renta?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_enviar-quien",
+            "informar_tramite",
+            "informar_documento"
+        ],
+        "source_lang": "es",
+        "referent": "aa quién se le enviarán las claves de la renta?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "a quien se le envian los ganchos de la errenta? ",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_critica"
+        ],
+        "source_lang": "eu",
+        "referent": "asko desiratzen duzu",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "desiraz mucho",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_contexto-subvenciones",
+            "informar_categoria-subvencion"
+        ],
+        "source_lang": "eu",
+        "referent": "ba al dago laguntzarik gizarte-arretara bideratutako jardueretarako?",
+        "entities": [
+            {
+                "entity": "categoria-subvencion",
+                "value": "gizarte",
+                "normative_value": "servicios-sociales",
+                "start": 23,
+                "end": 29,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "laguntza dago gizarte-arretara bideratutako jardueretarako?",
+                "entities": [
+                    {
+                        "entity": "categoria-subvencion",
+                        "value": "gizarte",
+                        "normative_value": "servicios-sociales",
+                        "start": 14,
+                        "end": 20,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_listado",
+            "informar_tipo-oficina",
+            "informar_municipio"
+        ],
+        "source_lang": "eu",
+        "referent": "baduzu kirol bulegorik zarautzen?",
+        "entities": [
+            {
+                "entity": "tipo-oficina",
+                "value": "kirol",
+                "normative_value": "deportes",
+                "start": 7,
+                "end": 11,
+                "type": "bounded"
+            },
+            {
+                "entity": "municipio",
+                "value": "Zarautzen",
+                "normative_value": "zarautz",
+                "start": 23,
+                "end": 31,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "ba al dago kirol-bulegorik zarautzen?",
+                "entities": [
+                    {
+                        "entity": "tipo-oficina",
+                        "value": "kirol",
+                        "normative_value": "deportes",
+                        "start": 11,
+                        "end": 15,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "municipio",
+                        "value": "Zarautzen",
+                        "normative_value": "zarautz",
+                        "start": 27,
+                        "end": 35,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_tipo-declaracion"
+        ],
+        "source_lang": "eu",
+        "referent": "banakako aitorpena",
+        "entities": [
+            {
+                "entity": "tipo-declaracion",
+                "value": "Banakako",
+                "normative_value": "individual",
+                "start": 0,
+                "end": 7,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "aitorpena banakakoa",
+                "entities": [
+                    {
+                        "entity": "tipo-declaracion",
+                        "value": "banakakoa",
+                        "normative_value": "individual",
+                        "start": 10,
+                        "end": 18,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_alma"
+        ],
+        "source_lang": "eu",
+        "referent": "botek arima duzue?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "tenéis arima las botas?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_otros_bots"
+        ],
+        "source_lang": "es",
+        "referent": "cortana es mejor",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "la de korta es mejor",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_actosDeTramitacion"
+        ],
+        "source_lang": "es",
+        "referent": "cómo hago para realizar este trámite?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zer egin behar dut izapide hau egiteko?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_formaDeAbono"
+        ],
+        "source_lang": "es",
+        "referent": "cómo se abona esto?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "cómo se paga esto?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_formaDeAbono"
+        ],
+        "source_lang": "es",
+        "referent": "cómo se ingresa esta ayuda?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "nola sartzen da laguntza hau?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_plazoMaximoDeResolucion"
+        ],
+        "source_lang": "eu",
+        "referent": "denbora asko behar duzue konpontzeko?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "¿necesitáis mucho tiempo para arreglarlo?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_plazoMaximoDeResolucion"
+        ],
+        "source_lang": "eu",
+        "referent": "denbora asko beharko duzue erantzuteko?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "necesitas denbora asko para componer?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_tiempo"
+        ],
+        "source_lang": "eu",
+        "referent": "denbora hobetuko da?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "eguraldiak hobetuko du",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_contexto-subvenciones"
+        ],
+        "source_lang": "eu",
+        "referent": "diru-laguntzei buruz",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "plata-laguntzei buruz\"",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "cambiar-documento"
+        ],
+        "source_lang": "eu",
+        "referent": "dokumentuz aldatu",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "dokumentua quiero aldatuar",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_ubicacion",
+            "informar_departamento",
+            "informar_municipio"
+        ],
+        "source_lang": "eu",
+        "referent": "donostiako ogasuneko eraikina",
+        "entities": [
+            {
+                "entity": "departamento",
+                "value": "Ogasuneko",
+                "normative_value": "hacienda-finanzas",
+                "start": 11,
+                "end": 19,
+                "type": "bounded"
+            },
+            {
+                "entity": "municipio",
+                "value": "Donostiako",
+                "normative_value": "donostia-san-sebastian",
+                "start": 0,
+                "end": 9,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "el edificio de hacienda de donosti",
+                "entities": [
+                    {
+                        "entity": "departamento",
+                        "value": "Hacienda",
+                        "normative_value": "hacienda-finanzas",
+                        "start": 15,
+                        "end": 22,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "municipio",
+                        "value": "Donosti",
+                        "normative_value": "donostia-san-sebastian",
+                        "start": 27,
+                        "end": 33,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_oficinasDeAtencionPresencial"
+        ],
+        "source_lang": "es",
+        "referent": "dónde me pueden aclarar sobre el tema en persona?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "dónde me pueden azaldu sobre el gaia en persona?",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_oficinasDeAtencionPresencial"
+        ],
+        "source_lang": "es",
+        "referent": "dónde puedo consultar mis declaraciones presentadas en persona?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "non kontsulta ditzaket aurrez-aurre aurkeztutako aitorpenak?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_contexto-tramites",
+            "informar_tituloTramite"
+        ],
+        "source_lang": "eu",
+        "referent": "egoitzen gaiari buruz jakin nahi nuen",
+        "entities": [
+            {
+                "entity": "tituloTramite",
+                "value": "Egoitzen",
+                "normative_value": "855",
+                "start": 0,
+                "end": 7,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "quería saber sobre el tema de sedes",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "sedes",
+                        "normative_value": "855",
+                        "start": 30,
+                        "end": 34,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar-persiste-fallo"
+        ],
+        "source_lang": "es",
+        "referent": "el problema persiste",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "arazoak bere horretan dirau.",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_contacto",
+            "informar_tipo-oficina",
+            "informar_comarca"
+        ],
+        "source_lang": "eu",
+        "referent": "emadazu kosta urolako kirol bulegoko helbide elektronikoa",
+        "entities": [
+            {
+                "entity": "tipo-oficina",
+                "value": "kirol",
+                "normative_value": "deportes",
+                "start": 22,
+                "end": 26,
+                "type": "bounded"
+            },
+            {
+                "entity": "comarca",
+                "value": "urolako",
+                "normative_value": "urola-kosta",
+                "start": 14,
+                "end": 20,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "emango el correo de kosta urola kirol bulego?",
+                "entities": [
+                    {
+                        "entity": "tipo-oficina",
+                        "value": "kirol",
+                        "normative_value": "deportes",
+                        "start": 32,
+                        "end": 36,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "comarca",
+                        "value": "urola",
+                        "normative_value": "urola-kosta",
+                        "start": 26,
+                        "end": 30,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_contexto-subvenciones",
+            "preguntar_listado"
+        ],
+        "source_lang": "eu",
+        "referent": "emadazu laguntzen zerrenda",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "dame la zerrenda de laguntzen",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_contexto-subvenciones",
+            "informar_categoria-subvencion"
+        ],
+        "source_lang": "eu",
+        "referent": "enplegurako diru-laguntzak",
+        "entities": [
+            {
+                "entity": "categoria-subvencion",
+                "value": "Enplegurako",
+                "normative_value": "empleo-y-emprendizaje",
+                "start": 0,
+                "end": 10,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "enpleguari laguntzak",
+                "entities": [
+                    {
+                        "entity": "categoria-subvencion",
+                        "value": "Enpleguari",
+                        "normative_value": "empleo-y-emprendizaje",
+                        "start": 0,
+                        "end": 9,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_contexto-subvenciones",
+            "informar_estadoSubvencion"
+        ],
+        "source_lang": "eu",
+        "referent": "epez kanpo ez dauden laguntzak nahi ditut",
+        "entities": [
+            {
+                "entity": "estadoSubvencion",
+                "value": "Epez",
+                "normative_value": "fuera-de-plazo",
+                "start": 0,
+                "end": 3,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "quiero ayudas que no estén fuera de plazo.",
+                "entities": [
+                    {
+                        "entity": "estadoSubvencion",
+                        "value": "plazo",
+                        "normative_value": "fuera-de-plazo",
+                        "start": 36,
+                        "end": 40,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_gracias"
+        ],
+        "source_lang": "eu",
+        "referent": "eskerrik",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "eskerrik",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_gracias",
+            "social_adios"
+        ],
+        "source_lang": "eu",
+        "referent": "eskerrik asko gero arte",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "milesker, hasta gero",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_gracias",
+            "social_adios"
+        ],
+        "source_lang": "eu",
+        "referent": "eskerrik asko, agur.",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "gracias, adiós.",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_adios",
+            "social_gracias"
+        ],
+        "source_lang": "eu",
+        "referent": "eskerrik asko, gero arte",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "eskerrik asko, hasta gero!",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_plazo",
+            "informar_documento",
+            "informar_tramite"
+        ],
+        "source_lang": "eu",
+        "referent": "eta gakoak bertan behera uzteko datak?",
+        "entities": [
+            {
+                "entity": "documento",
+                "value": "gakoak",
+                "normative_value": "claves-renta",
+                "start": 4,
+                "end": 9,
+                "type": "bounded"
+            },
+            {
+                "entity": "tramite",
+                "value": "bertan behera uzteko",
+                "normative_value": "anular",
+                "start": 11,
+                "end": 30,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "y las fechas para cancelar las claves?",
+                "entities": [
+                    {
+                        "entity": "documento",
+                        "value": "claves",
+                        "normative_value": "claves-renta",
+                        "start": 31,
+                        "end": 36,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "tramite",
+                        "value": "cancelar",
+                        "normative_value": "anular",
+                        "start": 18,
+                        "end": 25,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_cuantia"
+        ],
+        "source_lang": "eu",
+        "referent": "eta zenbat diru sartzen didate kontuan?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "eta zenbat diru sartuko didate kontuan",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "saludo"
+        ],
+        "source_lang": "eu",
+        "referent": "eup",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "eup! ",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "afirmativo",
+            "negacion"
+        ],
+        "source_lang": "eu",
+        "referent": "ezer ez, beraz.",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "que nada",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_critica"
+        ],
+        "source_lang": "eu",
+        "referent": "gaizki funtzionatzen duzu",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "gaizki funzionatzen duzu",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_tipo-oficina"
+        ],
+        "source_lang": "eu",
+        "referent": "gaztegunea",
+        "entities": [
+            {
+                "entity": "tipo-oficina",
+                "value": "Gaztegunea",
+                "normative_value": "gaztegunea",
+                "start": 0,
+                "end": 9,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "jovengune",
+                "entities": [
+                    {
+                        "entity": "tipo-oficina",
+                        "value": "jovengune",
+                        "normative_value": "gaztegunea",
+                        "start": 0,
+                        "end": 8,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_municipio"
+        ],
+        "source_lang": "eu",
+        "referent": "getarian nago",
+        "entities": [
+            {
+                "entity": "municipio",
+                "value": "Getarian",
+                "normative_value": "getaria",
+                "start": 0,
+                "end": 7,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "estoy en getaria",
+                "entities": [
+                    {
+                        "entity": "municipio",
+                        "value": "Getaria",
+                        "normative_value": "getaria",
+                        "start": 9,
+                        "end": 15,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_tipo-declaracion",
+            "informar_documento",
+            "preguntar_enviar-quien"
+        ],
+        "source_lang": "eu",
+        "referent": "gure aitorpena baterakoa bada bidaliko dizkiozue gakoak nire senarrari?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "atera iazu zurito bat",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_chistes"
+        ],
+        "source_lang": "eu",
+        "referent": "gustatuko litzaidake txiste bat kontatzea.",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "gustatuko zitzaidan zuk niri txiste bat kontatzen",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_saludo"
+        ],
+        "source_lang": "es",
+        "referent": "hola",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "hola",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_informacionAdicional"
+        ],
+        "source_lang": "eu",
+        "referent": "info gehiago nahi dut",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "info gehiago nahi dut",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_modalidadesDeSolicitud"
+        ],
+        "source_lang": "eu",
+        "referent": "internet bidez kontsulta ditzaket adierazpenak?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "webaren bidez kontsulta ditzaket adierazpenak?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_departamento"
+        ],
+        "source_lang": "eu",
+        "referent": "kirolak daramatzan deparra",
+        "entities": [
+            {
+                "entity": "departamento",
+                "value": "Kirolak",
+                "normative_value": "cultura-cooperacion-juventud-deportes",
+                "start": 0,
+                "end": 6,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "departamendua kirolak eramaten dituna",
+                "entities": [
+                    {
+                        "entity": "departamento",
+                        "value": "kirolak",
+                        "normative_value": "cultura-cooperacion-juventud-deportes",
+                        "start": 14,
+                        "end": 20,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_observacionesInformacionComplementaria"
+        ],
+        "source_lang": "eu",
+        "referent": "kontuan hartu beharreko beste zerbait?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "otra cosa ha coger en cuenta",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_canal",
+            "informar_tramite"
+        ],
+        "source_lang": "es",
+        "referent": "los recibirá en el móvil?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "lo va a jasoar en el mugikor.",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_amigo"
+        ],
+        "source_lang": "eu",
+        "referent": "maite nazazun nahi dut",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "quiero que me quieras",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_formulariosYModelosAPresentar"
+        ],
+        "source_lang": "es",
+        "referent": "me das la hoja de solicitud para la familia numerosa?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "familia ugariaren eskaera orria emango al didazu?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_plazo",
+            "informar_documento",
+            "informar_tramite"
+        ],
+        "source_lang": "es",
+        "referent": "me gustaría saber cuál es el plazo máximo para la solicitud de las claves de la renta",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "errenta aitorpenerako gakoak eskatzeko epemuga noiz den jakin nahiko nuke.",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_gracias"
+        ],
+        "source_lang": "es",
+        "referent": "muchas gracias",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "muchas eskerriks",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_genero"
+        ],
+        "source_lang": "eu",
+        "referent": "mutila ala neska zara?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "¿eres chico o chica? ",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_oficinasDeAtencionPresencial",
+            "informar_tituloTramite"
+        ],
+        "source_lang": "eu",
+        "referent": "nire datu fiskalak bulegoetan eska ditzaket?",
+        "entities": [
+            {
+                "entity": "tituloTramite",
+                "value": "datu",
+                "normative_value": "857",
+                "start": 5,
+                "end": 8,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "¿puedo solicitar mis datos fiscales en las oficinas?",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "datps",
+                        "normative_value": "857",
+                        "start": 21,
+                        "end": 25,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_enviar-quien",
+            "informar_tipo-declaracion"
+        ],
+        "source_lang": "eu",
+        "referent": "nire emazteari bidaliko diozue aitorpena batera egindakoa bada?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "si la declaración es conjunta, ¿se la mandaréis a mi mujer?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_gracias",
+            "negacion"
+        ],
+        "source_lang": "es",
+        "referent": "no, gracias",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "ez, eskerrik asko",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_plazo",
+            "informar_documento",
+            "informar_tramite"
+        ],
+        "source_lang": "eu",
+        "referent": "noiz arte eskatu daitezke errenta gakoak?",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "eskatu",
+                "normative_value": "solicitar",
+                "start": 10,
+                "end": 15,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": "errenta gakoak",
+                "normative_value": "claves-renta",
+                "start": 26,
+                "end": 39,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "hasta cuando se pueden pedir las famosas de la renta?",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "pedir",
+                        "normative_value": "solicitar",
+                        "start": 23,
+                        "end": 27,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "famosas de la renta",
+                        "normative_value": "claves-renta",
+                        "start": 33,
+                        "end": 51,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_identificacionElectronica",
+            "informar_tituloTramite"
+        ],
+        "source_lang": "eu",
+        "referent": "nola identifika naiteke datu fiskalak eskatzeko?",
+        "entities": [
+            {
+                "entity": "tituloTramite",
+                "value": "datu",
+                "normative_value": "857",
+                "start": 24,
+                "end": 27,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "¿cómo me puedo identificar para solicitar los datos fiscales?",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "datos",
+                        "normative_value": "857",
+                        "start": 46,
+                        "end": 50,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_seInformaMediante"
+        ],
+        "source_lang": "eu",
+        "referent": "nola jarriko da harremanetan administrazioa nirekin?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "cómo se va jarriar conmigo harremanetan administrazioa?",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_seInformaMediante"
+        ],
+        "source_lang": "eu",
+        "referent": "nola komunikatuko da nirekin administrazioa?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "¿cómo se va a comunicar conmigo la administración?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_que_tal"
+        ],
+        "source_lang": "eu",
+        "referent": "nola zoaz?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "nola estás?",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_ubicacion",
+            "informar_tipo-oficina"
+        ],
+        "source_lang": "eu",
+        "referent": "non geratzen da koldo mitxelena kulturunea?",
+        "entities": [
+            {
+                "entity": "tipo-oficina",
+                "value": "Koldo Mitxelena",
+                "normative_value": "koldo-mitxelena",
+                "start": 16,
+                "end": 30,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "non geratzen da koldo mitxelena kulturgunea?",
+                "entities": [
+                    {
+                        "entity": "tipo-oficina",
+                        "value": "Koldo Mitxelena",
+                        "normative_value": "koldo-mitxelena",
+                        "start": 16,
+                        "end": 30,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_quien_eres"
+        ],
+        "source_lang": "eu",
+        "referent": "nor zara?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "nongoa sara?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_tituloTramite",
+            "preguntar_tramitadoPor"
+        ],
+        "source_lang": "eu",
+        "referent": "nork izapidetzen du adinekoentzako zentroetarako plaza eskatzea?",
+        "entities": [
+            {
+                "entity": "tituloTramite",
+                "value": "adinekoentzako",
+                "normative_value": "855",
+                "start": 20,
+                "end": 33,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "¿quién tramita la solicitud de plaza para los centros de mayores?",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "mayores",
+                        "normative_value": "855",
+                        "start": 57,
+                        "end": 63,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "confirmar-acceso"
+        ],
+        "source_lang": "eu",
+        "referent": "ondo sartu naiz",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zuzen sartu naiz",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "afirmativo"
+        ],
+        "source_lang": "eu",
+        "referent": "ongi da.",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "está bien.",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_robot"
+        ],
+        "source_lang": "eu",
+        "referent": "pertsona bat zara?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zera pertsona bat?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_robot"
+        ],
+        "source_lang": "eu",
+        "referent": "pertsona edo robot bat zara?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "pertsona edo robot bat zara?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "negar_tramite",
+            "informar_documento",
+            "informar_tramite",
+            "informar_documento"
+        ],
+        "source_lang": "es",
+        "referent": "puedo pedir este año las claves de la renta a pesar de que el año pasado no hiciese la declaración?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "iaz aitorpenik egin ez banuen ere, aurten erretaren gakoak eska al ditzaket?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_contexto-subvenciones",
+            "informar_estadoSubvencion"
+        ],
+        "source_lang": "es",
+        "referent": "qué becas hay disponibles en este momento?",
+        "entities": [
+            {
+                "entity": "estadoSubvencion",
+                "value": "disponibles",
+                "normative_value": "dentro-de-plazo",
+                "start": 14,
+                "end": 24,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "zer beka daude eskuragarri une honetan?",
+                "entities": [
+                    {
+                        "entity": "estadoSubvencion",
+                        "value": "eskuragarri",
+                        "normative_value": "dentro-de-plazo",
+                        "start": 15,
+                        "end": 25,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_listado",
+            "informar_contexto-departamentos"
+        ],
+        "source_lang": "es",
+        "referent": "qué departamentos existen?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "ze rsail existitzen dira? ",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_observacionesInformacionComplementaria"
+        ],
+        "source_lang": "es",
+        "referent": "qué pasa si ya no le sirve la ayuda?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "que pasa si la laguna a no le sirve",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_sentimientos"
+        ],
+        "source_lang": "eu",
+        "referent": "sentimenduak izateko diseinatu zaituzte?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "sentimenduak  izateko diseñatu zaituzte?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "afirmativo",
+            "informar_documento"
+        ],
+        "source_lang": "es",
+        "referent": "sí, pero este año no tengo las claves",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "bai, baina aurten ez ditut gakoak.",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_chistes"
+        ],
+        "source_lang": "eu",
+        "referent": "txiste bat kontatzea nahi dut.",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "txiste bat kontatzea nahiko nuke",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_chistes"
+        ],
+        "source_lang": "eu",
+        "referent": "txiste onak ezagutzen dituzu?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "txiste onik ezagutzen?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_listado",
+            "informar_tipo-oficina",
+            "informar_comarca"
+        ],
+        "source_lang": "eu",
+        "referent": "urola kosta eskualdean kirol bulegoa dago?",
+        "entities": [
+            {
+                "entity": "tipo-oficina",
+                "value": "kirol",
+                "normative_value": "deportes",
+                "start": 23,
+                "end": 27,
+                "type": "bounded"
+            },
+            {
+                "entity": "comarca",
+                "value": "Urola kosta",
+                "normative_value": "urola-kosta",
+                "start": 0,
+                "end": 10,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "hay oficina deportiva en la comarca urola-kosta?",
+                "entities": [
+                    {
+                        "entity": "tipo-oficina",
+                        "value": "deportiva",
+                        "normative_value": "deportes",
+                        "start": 12,
+                        "end": 20,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "comarca",
+                        "value": "Urola-kosta",
+                        "normative_value": "urola-kosta",
+                        "start": 36,
+                        "end": 46,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_ubicacion",
+            "informar_tipo-oficina",
+            "informar_municipio"
+        ],
+        "source_lang": "eu",
+        "referent": "zarautzeko landa-garapenerako bulegoa",
+        "entities": [
+            {
+                "entity": "municipio",
+                "value": "Zarautzeko",
+                "normative_value": "zarautz",
+                "start": 0,
+                "end": 9,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "oficina para el desarrollo agrícola de zarautz",
+                "entities": [
+                    {
+                        "entity": "municipio",
+                        "value": "Zarautz",
+                        "normative_value": "zarautz",
+                        "start": 39,
+                        "end": 45,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_tituloTramite",
+            "preguntar_requisitos"
+        ],
+        "source_lang": "eu",
+        "referent": "zein dira adineko zentroetan plaza eskatzeko baldintzak?",
+        "entities": [
+            {
+                "entity": "tituloTramite",
+                "value": "adineko",
+                "normative_value": "855",
+                "start": 10,
+                "end": 16,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "¿qué condiciones hay que cumplir para solicitar plaza en los centros de mayores?",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "mayores",
+                        "normative_value": "855",
+                        "start": 72,
+                        "end": 78,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_plazoPresentacion"
+        ],
+        "source_lang": "eu",
+        "referent": "zein garaitan erantzun behar ditut gauzak?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zenbat denboran tengo que erantziar gauzak?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_genero"
+        ],
+        "source_lang": "eu",
+        "referent": "zein generorekin identifikatzen zara?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zein generorekin identifikatzen zara?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_listado"
+        ],
+        "source_lang": "eu",
+        "referent": "zeintzuk daude?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zeintzuk hay?",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_que_tal"
+        ],
+        "source_lang": "eu",
+        "referent": "zelan zabiz?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zelan zoaz?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_cuantia"
+        ],
+        "source_lang": "eu",
+        "referent": "zenbat da laguntza?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "¿a cuánto asciende la ayuda?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_listado",
+            "informar_departamento"
+        ],
+        "source_lang": "eu",
+        "referent": "zer bulego ditu ogasun eta finantza sailak?",
+        "entities": [
+            {
+                "entity": "departamento",
+                "value": "Ogasun",
+                "normative_value": "hacienda-finanzas",
+                "start": 16,
+                "end": 21,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "¿qué oficinas tiene el departamento de hacienda y finanzas?",
+                "entities": [
+                    {
+                        "entity": "departamento",
+                        "value": "Hacienda",
+                        "normative_value": "hacienda-finanzas",
+                        "start": 39,
+                        "end": 46,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "preguntar_ayuda"
+        ],
+        "source_lang": "eu",
+        "referent": "zer dakizu egiten?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zer egiten sabes? ",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_listado",
+            "informar_contexto-tramites"
+        ],
+        "source_lang": "eu",
+        "referent": "zer tramitetan lagun diezadakezu?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "ze tramiteari buruz diezaiokedazu",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_sentimientos"
+        ],
+        "source_lang": "eu",
+        "referent": "zerbait sentitzeko diseinatu zaituzte?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "¿te han diseñado para sentir algo?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_finalidad"
+        ],
+        "source_lang": "eu",
+        "referent": "zertarako balio du izapide honek?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "¿para qué vale este trámite?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_finalidad"
+        ],
+        "source_lang": "eu",
+        "referent": "zertarako den",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zertarako es",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_tituloTramite",
+            "preguntar_finalidad"
+        ],
+        "source_lang": "eu",
+        "referent": "zertarako sive el m300",
+        "entities": [
+            {
+                "entity": "tituloTramite",
+                "value": "m300",
+                "normative_value": "740",
+                "start": 18,
+                "end": 21,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "m300ak, zertarako balio du?",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "M300ak",
+                        "normative_value": "740",
+                        "start": 0,
+                        "end": 5,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "informar_tipo-declaracion",
+            "preguntar_enviar-quien"
+        ],
+        "source_lang": "eu",
+        "referent": "adierazpen bateratua egin badut, gakoak nori bidaltzen dizkiozuen jakin nahi dut",
+        "entities": [
+            {
+                "entity": "tipo-declaracion",
+                "value": "adierazpen bateratua",
+                "normative_value": "conjunta",
+                "start": 0,
+                "end": 19,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": "gakoak ",
+                "normative_value": "claves-renta",
+                "start": 33,
+                "end": 38,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "espresio bateratua egin badut, klabeak nori bidaltzen dizkiozuen jakin nahi dut",
+                "entities": [
+                    {
+                        "entity": "tipo-declaracion",
+                        "value": "Espresio bateratua",
+                        "normative_value": "conjunta",
+                        "start": 0,
+                        "end": 17,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "klabeak",
+                        "normative_value": "claves-renta",
+                        "start": 31,
+                        "end": 37,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_adios"
+        ],
+        "source_lang": "es",
+        "referent": "adioos",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "adiour",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_gracias"
+        ],
+        "source_lang": "es",
+        "referent": "agradecido",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "eskerrrik asko",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_adios"
+        ],
+        "source_lang": "eu",
+        "referent": "agur",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "venga, agur",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_adios",
+            "social_gracias"
+        ],
+        "source_lang": "es",
+        "referent": "agur gracias",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "agur eskerrik",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_observacionesInformacionComplementaria"
+        ],
+        "source_lang": "es",
+        "referent": "alguna otra observación?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "beste observacionik?",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_saludo"
+        ],
+        "source_lang": "eu",
+        "referent": "apa",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "apa",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar-persiste-fallo"
+        ],
+        "source_lang": "eu",
+        "referent": "arazo iguala agertzen da",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "aparece el mismo problema.",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_adios"
+        ],
+        "source_lang": "eu",
+        "referent": "bakean izti",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "bakean dejame",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "cambiar-documento"
+        ],
+        "source_lang": "eu",
+        "referent": "beste elementu bati hitzegin",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "dokumentu berri batetaz hitz egin",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "cambiar-tramite"
+        ],
+        "source_lang": "eu",
+        "referent": "beste zerbait egin",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "in beste zeozer",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_enviar-quien",
+            "informar_documento"
+        ],
+        "source_lang": "eu",
+        "referent": "bidaliko dizkiozue errentaren gakoak nire emazteari ere?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "errentarako gakoak nire emazteari bidaliko dizkiozue",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_saludo"
+        ],
+        "source_lang": "es",
+        "referent": "buenas",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "kaixo",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_tipo-declaracion"
+        ],
+        "source_lang": "es",
+        "referent": "conjunta",
+        "entities": [
+            {
+                "entity": "tipo-declaracion",
+                "value": "conjunta",
+                "normative_value": "conjunta",
+                "start": 0,
+                "end": 7,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "konjuntatzen du",
+                "entities": [
+                    {
+                        "entity": "tipo-declaracion",
+                        "value": "konjuntatzen",
+                        "normative_value": "conjunta",
+                        "start": 0,
+                        "end": 11,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_tituloTramite",
+            "preguntar_formulariosYModelosAPresentar"
+        ],
+        "source_lang": "es",
+        "referent": "cuáles son los formularios del modelo 300?",
+        "entities": [
+            {
+                "entity": "tituloTramite",
+                "value": "modelo 300",
+                "normative_value": "740",
+                "start": 31,
+                "end": 40,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "zein dira 300 modeloko formularios? ",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "300 modeloko",
+                        "normative_value": "740",
+                        "start": 10,
+                        "end": 21,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_enviar-como"
+        ],
+        "source_lang": "es",
+        "referent": "cómo las enviáis",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "nola bidaltzen dituzue?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_departamento",
+            "informar_municipio"
+        ],
+        "source_lang": "es",
+        "referent": "departamento de hacienda en donosti",
+        "entities": [
+            {
+                "entity": "departamento",
+                "value": "hacienda",
+                "normative_value": "hacienda-finanzas",
+                "start": 16,
+                "end": 23,
+                "type": "bounded"
+            },
+            {
+                "entity": "municipio",
+                "value": "donosti",
+                "normative_value": "donostia-san-sebastian",
+                "start": 28,
+                "end": 34,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "donostiko ogasun departamentua",
+                "entities": [
+                    {
+                        "entity": "departamento",
+                        "value": "Ogasun",
+                        "normative_value": "hacienda-finanzas",
+                        "start": 10,
+                        "end": 15,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "municipio",
+                        "value": "Donostiko",
+                        "normative_value": "donostia-san-sebastian",
+                        "start": 0,
+                        "end": 8,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_ubicacion",
+            "informar_tipo-oficina"
+        ],
+        "source_lang": "es",
+        "referent": "dónde está la casa del deporte?",
+        "entities": [
+            {
+                "entity": "tipo-oficina",
+                "value": "casa del deporte",
+                "normative_value": "deportes",
+                "start": 14,
+                "end": 29,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "non dago kirolaren etxea?",
+                "entities": [
+                    {
+                        "entity": "tipo-oficina",
+                        "value": "kirolaren etxea",
+                        "normative_value": "deportes",
+                        "start": 9,
+                        "end": 23,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_ubicacion",
+            "informar_tipo-oficina"
+        ],
+        "source_lang": "es",
+        "referent": "dónde queda koldo mitxelena kulturunea?",
+        "entities": [
+            {
+                "entity": "tipo-oficina",
+                "value": "Koldo Mitxelena Kulturunea",
+                "normative_value": "koldo-mitxelena",
+                "start": 12,
+                "end": 37,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "non dado koldo mitxelena kulturgunea?",
+                "entities": [
+                    {
+                        "entity": "tipo-oficina",
+                        "value": "Koldo Mitxelena Kulturgunea",
+                        "normative_value": "koldo-mitxelena",
+                        "start": 9,
+                        "end": 35,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_adios"
+        ],
+        "source_lang": "eu",
+        "referent": "egoitzatik irten",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "residentziatik irten",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "transport",
+        "intents": [
+            "informar_contacto"
+        ],
+        "source_lang": "es",
+        "referent": "el móvil es 623451020",
+        "entities": [
+            {
+                "entity": "contacto",
+                "value": " 623451020",
+                "normative_value": "",
+                "start": 12,
+                "end": 20,
+                "type": "free"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "658745214",
+                "entities": [
+                    {
+                        "entity": "contacto",
+                        "value": "658745214",
+                        "normative_value": "",
+                        "start": 0,
+                        "end": 8,
+                        "type": "free"
+                    }
+                ],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "preguntar_plazo"
+        ],
+        "source_lang": "eu",
+        "referent": "emazkidazu errenta-datak",
+        "entities": [
+            {
+                "entity": "documento",
+                "value": "errenta-datak",
+                "normative_value": "declaracion-renta",
+                "start": 11,
+                "end": 23,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "dame datos-renta",
+                "entities": [
+                    {
+                        "entity": "documento",
+                        "value": "datos-renta",
+                        "normative_value": "declaracion-renta",
+                        "start": 5,
+                        "end": 15,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "preguntar_tramite"
+        ],
+        "source_lang": "eu",
+        "referent": "errentaren gakoa eska dezaket?",
+        "entities": [
+            {
+                "entity": "documento",
+                "value": "gakoa",
+                "normative_value": "claves-renta",
+                "start": 11,
+                "end": 15,
+                "type": "bounded"
+            },
+            {
+                "entity": "tramite",
+                "value": "eska",
+                "normative_value": "solicitar",
+                "start": 17,
+                "end": 20,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "rentan klabea esan dezaket?",
+                "entities": [
+                    {
+                        "entity": "documento",
+                        "value": "klabea",
+                        "normative_value": "claves-renta",
+                        "start": 7,
+                        "end": 12,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "tramite",
+                        "value": "esan",
+                        "normative_value": "solicitar",
+                        "start": 14,
+                        "end": 17,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_gracias"
+        ],
+        "source_lang": "eu",
+        "referent": "eskerrik asko",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "eskerrik asko majo",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_municipio"
+        ],
+        "source_lang": "es",
+        "referent": "estoy en getaria",
+        "entities": [
+            {
+                "entity": "municipio",
+                "value": "getaria",
+                "normative_value": "getaria",
+                "start": 9,
+                "end": 15,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "getarian nago",
+                "entities": [
+                    {
+                        "entity": "municipio",
+                        "value": "Getarian",
+                        "normative_value": "getaria",
+                        "start": 0,
+                        "end": 7,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_canal"
+        ],
+        "source_lang": "eu",
+        "referent": "eta sms bidez",
+        "entities": [
+            {
+                "entity": "canal",
+                "value": "sms",
+                "normative_value": "sms",
+                "start": 4,
+                "end": 6,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "eta smstik",
+                "entities": [
+                    {
+                        "entity": "canal",
+                        "value": "SMStik",
+                        "normative_value": "sms",
+                        "start": 4,
+                        "end": 9,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "informar_tramite",
+            "negar_canal",
+            "preguntar_canal"
+        ],
+        "source_lang": "eu",
+        "referent": "ez daukat telefonorik. nondik bidaliko didazue proposamena?",
+        "entities": [
+            {
+                "entity": "canal",
+                "value": "telefonorik",
+                "normative_value": "telefono",
+                "start": 10,
+                "end": 20,
+                "type": "bounded"
+            },
+            {
+                "entity": "tramite",
+                "value": "bidaliko",
+                "normative_value": "enviar",
+                "start": 30,
+                "end": 37,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": "proposamena",
+                "normative_value": "renta-etxean",
+                "start": 47,
+                "end": 57,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "no tengo teléfono. ¿cómo me vais a mandar la propuesta?",
+                "entities": [
+                    {
+                        "entity": "canal",
+                        "value": "teléfono",
+                        "normative_value": "telefono",
+                        "start": 9,
+                        "end": 16,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "tramite",
+                        "value": "mandar",
+                        "normative_value": "enviar",
+                        "start": 35,
+                        "end": 40,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "propuesta",
+                        "normative_value": "renta-etxean",
+                        "start": 45,
+                        "end": 53,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "negar_tramite"
+        ],
+        "source_lang": "eu",
+        "referent": "ezta kontsultatu ere",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "kontsultatu",
+                "normative_value": "consultar",
+                "start": 5,
+                "end": 15,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "ezta kontsultatu ere",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "kontsultatu",
+                        "normative_value": "consultar",
+                        "start": 5,
+                        "end": 15,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "informar_tipo-resolucion",
+            "informar_tramite",
+            "preguntar_plazo"
+        ],
+        "source_lang": "es",
+        "referent": "fechas de confirmar renta etxean a pagar",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "confirmar",
+                "normative_value": "confirmar",
+                "start": 10,
+                "end": 18,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": "renta etxean",
+                "normative_value": "renta-etxean",
+                "start": 20,
+                "end": 31,
+                "type": "bounded"
+            },
+            {
+                "entity": "tipo-resolucion",
+                "value": "a pagar",
+                "normative_value": "a-ingresar",
+                "start": 33,
+                "end": 39,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "renta konfirmazioen fetxak etxean kobratzen dira",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "konfirmazioen",
+                        "normative_value": "confirmar",
+                        "start": 6,
+                        "end": 18,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "Renta",
+                        "normative_value": "renta-etxean",
+                        "start": 0,
+                        "end": 4,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "tipo-resolucion",
+                        "value": "kobratzen",
+                        "normative_value": "a-ingresar",
+                        "start": 34,
+                        "end": 42,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_adios",
+            "social_gracias"
+        ],
+        "source_lang": "es",
+        "referent": "gracias, hasta luego",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "gracias, hasta gero",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "transport",
+        "intents": [
+            "inf-fallo-operativo"
+        ],
+        "source_lang": "es",
+        "referent": "ha habido un error",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "oker bat egon da",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_contexto-departamentos",
+            "informar_departamento",
+            "informar_municipio"
+        ],
+        "source_lang": "es",
+        "referent": "hola quiero que me des la oficina de turismo de donosti",
+        "entities": [
+            {
+                "entity": "municipio",
+                "value": "donosti",
+                "normative_value": "donostia-san-sebastian",
+                "start": 48,
+                "end": 54,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "hola, quiero dar el bulego de turimo de donostia",
+                "entities": [
+                    {
+                        "entity": "municipio",
+                        "value": "Donostia",
+                        "normative_value": "donostia-san-sebastian",
+                        "start": 40,
+                        "end": 47,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "cambiar-documento",
+            "cambiar-tramite"
+        ],
+        "source_lang": "es",
+        "referent": "háblame de otras cosas",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "hablatu de beste gauzak",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_tramite"
+        ],
+        "source_lang": "eu",
+        "referent": "ikusi nahi ditut.",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "ikusi",
+                "normative_value": "consultar",
+                "start": 0,
+                "end": 4,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "ver nahi ditut",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "ver",
+                        "normative_value": "consultar",
+                        "start": 0,
+                        "end": 2,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "preguntar_canal"
+        ],
+        "source_lang": "es",
+        "referent": "mandáis las claves al teléfono?",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "mandáis",
+                "normative_value": "enviar",
+                "start": 0,
+                "end": 6,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": "claves",
+                "normative_value": "claves-renta",
+                "start": 12,
+                "end": 17,
+                "type": "bounded"
+            },
+            {
+                "entity": "canal",
+                "value": "teléfono",
+                "normative_value": "telefono",
+                "start": 22,
+                "end": 29,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "gakoak telefonora bidaltzen al dituzue?",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "bidaltzen",
+                        "normative_value": "enviar",
+                        "start": 18,
+                        "end": 26,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "Gakoak",
+                        "normative_value": "claves-renta",
+                        "start": 0,
+                        "end": 5,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "canal|telefono",
+                        "value": "telefonora",
+                        "normative_value": "telefono",
+                        "start": 7,
+                        "end": 16,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_tramite",
+            "informar_documento"
+        ],
+        "source_lang": "es",
+        "referent": "me enviais las claves de renta",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "enviais",
+                "normative_value": "enviar",
+                "start": 3,
+                "end": 9,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": "claves de renta",
+                "normative_value": "claves-renta",
+                "start": 15,
+                "end": 29,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "enviatuko dizkidazue errentaren las claves",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "Enviatuko",
+                        "normative_value": "enviar",
+                        "start": 0,
+                        "end": 8,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "errentaren las claves",
+                        "normative_value": "claves-renta",
+                        "start": 21,
+                        "end": 41,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_contacto",
+            "informar_tipo-oficina",
+            "informar_municipio"
+        ],
+        "source_lang": "es",
+        "referent": "me quiero poner en contacto con la oficina agraria de ordizia",
+        "entities": [
+            {
+                "entity": "tipo-oficina",
+                "value": "oficina agraria",
+                "normative_value": "agraria",
+                "start": 35,
+                "end": 49,
+                "type": "bounded"
+            },
+            {
+                "entity": "municipio",
+                "value": "Ordizia",
+                "normative_value": "ordizia",
+                "start": 54,
+                "end": 60,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "con el bulego ordiziako nekazaritzarena quiero jarri harremanetan",
+                "entities": [
+                    {
+                        "entity": "tipo-oficina",
+                        "value": "nekazaritzarena",
+                        "normative_value": "agraria",
+                        "start": 24,
+                        "end": 38,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "municipio",
+                        "value": "ordiziako",
+                        "normative_value": "ordizia",
+                        "start": 14,
+                        "end": 22,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "transport",
+        "intents": [
+            "informar_dni"
+        ],
+        "source_lang": "es",
+        "referent": "mi dni es 36252684p",
+        "entities": [
+            {
+                "entity": "dni",
+                "value": "36252684P",
+                "normative_value": "",
+                "start": 10,
+                "end": 18,
+                "type": "free"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "mi dni 03271805p",
+                "entities": [
+                    {
+                        "entity": "dni",
+                        "value": "03271805P",
+                        "normative_value": "",
+                        "start": 7,
+                        "end": 15,
+                        "type": "free"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_gracias"
+        ],
+        "source_lang": "eu",
+        "referent": "mila esker",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "mila esker",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_tituloTramite"
+        ],
+        "source_lang": "es",
+        "referent": "modelo 036",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "036 eredua",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "negacion"
+        ],
+        "source_lang": "es",
+        "referent": "ninguno de esos",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "horietako ninguno",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "transport",
+        "intents": [
+            "informar_dni"
+        ],
+        "source_lang": "eu",
+        "referent": "nire nana 20078654c da",
+        "entities": [
+            {
+                "entity": "dni",
+                "value": "20078654C",
+                "normative_value": "",
+                "start": 10,
+                "end": 18,
+                "type": "free"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "mi dni es 20078654c",
+                "entities": [
+                    {
+                        "entity": "dni",
+                        "value": "20078654C",
+                        "normative_value": "",
+                        "start": 10,
+                        "end": 18,
+                        "type": "free"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "transport",
+        "intents": [
+            "informar_dni"
+        ],
+        "source_lang": "eu",
+        "referent": "nire nana 40556792h da",
+        "entities": [
+            {
+                "entity": "dni",
+                "value": "40556792H",
+                "normative_value": "",
+                "start": 10,
+                "end": 18,
+                "type": "free"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "mi dni es 40556792h",
+                "entities": [
+                    {
+                        "entity": "dni",
+                        "value": "40556792H",
+                        "normative_value": "",
+                        "start": 10,
+                        "end": 18,
+                        "type": "free"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "preguntar_tramite"
+        ],
+        "source_lang": "eu",
+        "referent": "nire datu fiskalak jaso nahi nituzke",
+        "entities": [
+            {
+                "entity": "documento",
+                "value": "datu fiskalak",
+                "normative_value": "datos-fiscales",
+                "start": 5,
+                "end": 17,
+                "type": "bounded"
+            },
+            {
+                "entity": "tramite",
+                "value": "jaso",
+                "normative_value": "recepcionar",
+                "start": 19,
+                "end": 22,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "nire datu fiskalak bidaltzea nahiko nuke",
+                "entities": [
+                    {
+                        "entity": "documento",
+                        "value": "datu fiskalak ",
+                        "normative_value": "datos-fiscales",
+                        "start": 5,
+                        "end": 17,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "tramite",
+                        "value": "bidaltzea",
+                        "normative_value": "recepcionar",
+                        "start": 19,
+                        "end": 27,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "transport",
+        "intents": [
+            "informar_contacto"
+        ],
+        "source_lang": "eu",
+        "referent": "nire emaila kruskrus@gmail.com da",
+        "entities": [
+            {
+                "entity": "contacto",
+                "value": "kruskrus@gmail.com",
+                "normative_value": "",
+                "start": 12,
+                "end": 29,
+                "type": "free"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "nire emaila da kruskrus@gmail.com",
+                "entities": [
+                    {
+                        "entity": "contacto",
+                        "value": "kruskrus@gmail.com",
+                        "normative_value": "",
+                        "start": 15,
+                        "end": 32,
+                        "type": "free"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "preguntar_enviar-quien"
+        ],
+        "source_lang": "eu",
+        "referent": "nire senarrari gakoak bidaliko dizkiozue.",
+        "entities": [
+            {
+                "entity": "enviar-quien",
+                "value": "senarrari",
+                "normative_value": "conyuge",
+                "start": 5,
+                "end": 13,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": "gakoak",
+                "normative_value": "claves-renta",
+                "start": 15,
+                "end": 20,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "le mandaréis las claves a mi marido",
+                "entities": [
+                    {
+                        "entity": "enviar-quien",
+                        "value": "marido",
+                        "normative_value": "conyuge",
+                        "start": 29,
+                        "end": 34,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "claves",
+                        "normative_value": "claves-renta",
+                        "start": 17,
+                        "end": 22,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "transport",
+        "intents": [
+            "informar_contacto"
+        ],
+        "source_lang": "eu",
+        "referent": "nire telefono zenbakia hau da: 983652580",
+        "entities": [
+            {
+                "entity": "contacto",
+                "value": "983652580",
+                "normative_value": "",
+                "start": 31,
+                "end": 39,
+                "type": "free"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "bederatzi lau hiru bi bos bat sei sorchi saspi",
+                "entities": [
+                    {
+                        "entity": "contacto",
+                        "value": "Bederatzi lau hiru bi bos bat sei sorchi saspi",
+                        "normative_value": "",
+                        "start": 0,
+                        "end": 45,
+                        "type": "free"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "negacion",
+            "social_adios"
+        ],
+        "source_lang": "es",
+        "referent": "no, agur!",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "ez, aio!",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "informar_tipo-resolucion",
+            "informar_tramite",
+            "preguntar_plazo"
+        ],
+        "source_lang": "eu",
+        "referent": "noiz baieztatu behar dut itzuli beharreko errenta?",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "baieztatu",
+                "normative_value": "confirmar",
+                "start": 5,
+                "end": 13,
+                "type": "bounded"
+            },
+            {
+                "entity": "tipo-resolucion",
+                "value": "itzuli",
+                "normative_value": "a-devolver",
+                "start": 25,
+                "end": 30,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": "errenta",
+                "normative_value": "declaracion-renta",
+                "start": 42,
+                "end": 48,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "¿cuándo tengo que confirmar la devolución de la renta?",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "confirmar",
+                        "normative_value": "confirmar",
+                        "start": 18,
+                        "end": 26,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "tipo-resolucion",
+                        "value": "devolución",
+                        "normative_value": "a-devolver",
+                        "start": 31,
+                        "end": 40,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "renta",
+                        "normative_value": "declaracion-renta",
+                        "start": 48,
+                        "end": 52,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_tramite",
+            "preguntar_enviar-como"
+        ],
+        "source_lang": "eu",
+        "referent": "nola bidaliko dituzue?",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "bidaliko",
+                "normative_value": "enviar",
+                "start": 5,
+                "end": 12,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "¿cómo los váis a enviar?",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "enviar",
+                        "normative_value": "enviar",
+                        "start": 17,
+                        "end": 22,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "informar_tramite"
+        ],
+        "source_lang": "eu",
+        "referent": "nola eska ditzazket klabeak?",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "eska",
+                "normative_value": "solicitar",
+                "start": 5,
+                "end": 8,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": " klabeak",
+                "normative_value": "claves-renta",
+                "start": 19,
+                "end": 26,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "¿cómo puedo pedir las claves?",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "pedir",
+                        "normative_value": "solicitar",
+                        "start": 12,
+                        "end": 16,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "claves",
+                        "normative_value": "claves-renta",
+                        "start": 22,
+                        "end": 27,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_enviar-quien"
+        ],
+        "source_lang": "eu",
+        "referent": "nori bidali?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "nori mandar?",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_enviar-quien"
+        ],
+        "source_lang": "eu",
+        "referent": "nori?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "¿a quién?",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "preguntar_enviar-quien"
+        ],
+        "source_lang": "eu",
+        "referent": "nork jasoko ditu gakoak?",
+        "entities": [
+            {
+                "entity": "documento|claves-renta",
+                "value": "gakoak?",
+                "normative_value": "claves-renta",
+                "start": 17,
+                "end": 23,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "nor ordenatuko ditu gauzak?",
+                "entities": [
+                    {
+                        "entity": "documento|claves-renta",
+                        "value": "gakoak?",
+                        "normative_value": "claves-renta",
+                        "start": 17,
+                        "end": 23,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "no-se"
+        ],
+        "source_lang": "es",
+        "referent": "no tengo ni idea",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "ez daukat ideiarik",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_tipo-oficina",
+            "informar_municipio"
+        ],
+        "source_lang": "es",
+        "referent": "oficina de hacienda en zarautz",
+        "entities": [
+            {
+                "entity": "municipio",
+                "value": "zarautz",
+                "normative_value": "zarautz",
+                "start": 23,
+                "end": 29,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "zarautzeko ogasun bulegoa",
+                "entities": [
+                    {
+                        "entity": "municipio",
+                        "value": "Zarautzeko",
+                        "normative_value": "zarautz",
+                        "start": 0,
+                        "end": 9,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "social_saludo"
+        ],
+        "source_lang": "es",
+        "referent": "ola",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "ola",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_ubicacion",
+            "informar_departamento"
+        ],
+        "source_lang": "es",
+        "referent": "para asuntos de tráfico, a donde tengo que dirigirme?",
+        "entities": [
+            {
+                "entity": "departamento",
+                "value": "tráfico",
+                "normative_value": "movilidad-ordenacion-territorio",
+                "start": 16,
+                "end": 22,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "trafikoko gauzetarako nora joan behar dut?",
+                "entities": [
+                    {
+                        "entity": "departamento",
+                        "value": "Trafikoko",
+                        "normative_value": "movilidad-ordenacion-territorio",
+                        "start": 0,
+                        "end": 8,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "negacion"
+        ],
+        "source_lang": "es",
+        "referent": "para nada",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "ezertarako",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "transport",
+        "intents": [
+            "informar_contacto"
+        ],
+        "source_lang": "eu",
+        "referent": "perretxiko66@hotmail.com",
+        "entities": [
+            {
+                "entity": "contacto",
+                "value": "perretxiko66@hotmail.com",
+                "normative_value": "",
+                "start": 0,
+                "end": 23,
+                "type": "free"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "seta66 arroba hotmail.com",
+                "entities": [
+                    {
+                        "entity": "contacto",
+                        "value": "Seta66 arroba hotmail.com",
+                        "normative_value": "",
+                        "start": 0,
+                        "end": 24,
+                        "type": "free"
+                    }
+                ],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_canal",
+            "informar_tramite"
+        ],
+        "source_lang": "es",
+        "referent": "por qué canal se envían?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zer kanaletik bidaltzen dira?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "preguntar_ayuda"
+        ],
+        "source_lang": "es",
+        "referent": "preciso ayuda",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "laguntza behar dut",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "afirmativo",
+            "social_gracias"
+        ],
+        "source_lang": "eu",
+        "referent": "primeran, mila esker.",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "de primeran, mila esker",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "informar_tramite",
+            "preguntar_requisitos"
+        ],
+        "source_lang": "es",
+        "referent": "que hace falta para acceder a mis datos fiscales?",
+        "entities": [
+            {
+                "entity": "tramite",
+                "value": "acceder",
+                "normative_value": "acceder",
+                "start": 20,
+                "end": 26,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": "datos fiscales",
+                "normative_value": "datos-fiscales",
+                "start": 34,
+                "end": 47,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "zer behar da nire datu fiskalak sartzeko?",
+                "entities": [
+                    {
+                        "entity": "tramite",
+                        "value": "sartzeko",
+                        "normative_value": "acceder",
+                        "start": 32,
+                        "end": 39,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "datu fiskalak",
+                        "normative_value": "datos-fiscales",
+                        "start": 18,
+                        "end": 30,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_amigo"
+        ],
+        "source_lang": "es",
+        "referent": "quieres ser mi novio?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "nire mutil-laguna izan nahi al duzu?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_solicitudPorInternet"
+        ],
+        "source_lang": "es",
+        "referent": "quiero pedirlo online",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "online eskatu nahi dut",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_quien_eres"
+        ],
+        "source_lang": "es",
+        "referent": "quiero saber quién eres",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zein zaren jakin nahi dut",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_quien_eres"
+        ],
+        "source_lang": "es",
+        "referent": "quién eres?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "nor eres?",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_dirigidoA",
+            "informar_tituloTramite"
+        ],
+        "source_lang": "es",
+        "referent": "quién puede acceder a su información fiscal?",
+        "entities": [
+            {
+                "entity": "tituloTramite",
+                "value": "información fiscal",
+                "normative_value": "857",
+                "start": 25,
+                "end": 42,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "quién obtiene tu información fiscal?",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "información fiscal",
+                        "normative_value": "857",
+                        "start": 17,
+                        "end": 34,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_horario",
+            "informar_tipo-oficina",
+            "informar_municipio"
+        ],
+        "source_lang": "es",
+        "referent": "qué horario tiene la oficina de atención ciudadana de irun?",
+        "entities": [
+            {
+                "entity": "municipio",
+                "value": "Irun",
+                "normative_value": "irun",
+                "start": 54,
+                "end": 57,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "zer ordutegi dauka iruneko hiritarren arretarako bulegoak?",
+                "entities": [
+                    {
+                        "entity": "municipio",
+                        "value": "iruneko",
+                        "normative_value": "irun",
+                        "start": 19,
+                        "end": 25,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_requisitos",
+            "informar_tituloTramite"
+        ],
+        "source_lang": "es",
+        "referent": "qué necesito para obtener datos fiscales?",
+        "entities": [
+            {
+                "entity": "tituloTramite",
+                "value": "datos fiscales",
+                "normative_value": "857",
+                "start": 26,
+                "end": 39,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "zer behar dut datu fiskalak eskuratzeko?",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "datu fiskalak",
+                        "normative_value": "857",
+                        "start": 14,
+                        "end": 26,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_normativa",
+            "informar_tituloTramite"
+        ],
+        "source_lang": "es",
+        "referent": "qué normativa se aplica a la declaración trimestral del iva",
+        "entities": [
+            {
+                "entity": "tituloTramite",
+                "value": "declaración trimestral del IVA",
+                "normative_value": "740",
+                "start": 29,
+                "end": 58,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "zein da hiruhilabeteko bez aitorpenaren araudia?",
+                "entities": [
+                    {
+                        "entity": "tituloTramite",
+                        "value": "hiruhilabeteko BEZ aitorpenaren",
+                        "normative_value": "740",
+                        "start": 8,
+                        "end": 38,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_hobbies"
+        ],
+        "source_lang": "es",
+        "referent": "qué te gusta hacer?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zer egitea duzu gustuko?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_tiempo"
+        ],
+        "source_lang": "es",
+        "referent": "qué tiempo hace?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "ze eguraldi egiten du?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "preguntar_enviar-quien",
+            "informar_documento",
+            "informar_tramite"
+        ],
+        "source_lang": "es",
+        "referent": "recibirá mi mujer las claves de la renta?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "nire emazteak errentaren pasahitzak jasoko al ditu? ",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "transport",
+        "intents": [
+            "inf-fallo-operativo"
+        ],
+        "source_lang": "es",
+        "referent": "reportar un error de cobro",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "reportar un error de cobro.",
+                "entities": [],
+                "lang_proportion": "more_es"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_chistes"
+        ],
+        "source_lang": "es",
+        "referent": "sabes contar chistes?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "txisteak kontatzen dakizu?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "fiscal",
+        "intents": [
+            "informar_documento",
+            "informar_tramite",
+            "negar_canal",
+            "preguntar_canal"
+        ],
+        "source_lang": "es",
+        "referent": "si no puedo usar el móvil, ¿a dónde me podéis mandar las claves?",
+        "entities": [
+            {
+                "entity": "canal",
+                "value": "móvil",
+                "normative_value": "sms",
+                "start": 20,
+                "end": 24,
+                "type": "bounded"
+            },
+            {
+                "entity": "documento",
+                "value": "claves",
+                "normative_value": "claves-renta",
+                "start": 57,
+                "end": 62,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "telefono mugikorra erabiltzerik ez badaukat, nora bidal diezazkidakezue gakoak?",
+                "entities": [
+                    {
+                        "entity": "canal",
+                        "value": "Telefono mugikorra",
+                        "normative_value": "sms",
+                        "start": 0,
+                        "end": 17,
+                        "type": "bounded"
+                    },
+                    {
+                        "entity": "documento",
+                        "value": "gakoak",
+                        "normative_value": "claves-renta",
+                        "start": 72,
+                        "end": 77,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_listado",
+            "informar_contexto-tramites"
+        ],
+        "source_lang": "es",
+        "referent": "sobre qué tramites puedes ayudarme?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "zer izapideei buruz lagundu nazakezu?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "informar_contexto-subvenciones",
+            "informar_categoria-subvencion"
+        ],
+        "source_lang": "es",
+        "referent": "subvenciones balance territorial",
+        "entities": [
+            {
+                "entity": "categoria-subvencion",
+                "value": "balance territorial",
+                "normative_value": "equilibrio-territorial",
+                "start": 13,
+                "end": 31,
+                "type": "bounded"
+            }
+        ],
+        "code-switching": [
+            {
+                "text": "subvenzioal baltza territorial",
+                "entities": [
+                    {
+                        "entity": "categoria-subvencion",
+                        "value": "baltza territorial",
+                        "normative_value": "equilibrio-territorial",
+                        "start": 12,
+                        "end": 29,
+                        "type": "bounded"
+                    }
+                ],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "afirmativo",
+            "social_gracias"
+        ],
+        "source_lang": "es",
+        "referent": "vale ya está, gracias",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "ongi da, mila esker.",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "generic",
+        "intents": [
+            "borrar-memoria"
+        ],
+        "source_lang": "es",
+        "referent": "volver al principio",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "hasierara itzuli",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "transport",
+        "intents": [
+            "faq-recarga-webapp"
+        ],
+        "source_lang": "eu",
+        "referent": "zelan aktibatzen da web bidez egindako diru karga?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "nola se aktibatzen da web bidez egindako la recarga",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    },
+    {
+        "domain": "administration",
+        "intents": [
+            "preguntar_seInformaMediante"
+        ],
+        "source_lang": "eu",
+        "referent": "zelan esango didate eskeaera onartua izan den?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "nola esango didate eskaera onartua izan dela?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_mentira"
+        ],
+        "source_lang": "es",
+        "referent": "¿me estás mintiendo?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "gezurretan ari al zatzaizkit?",
+                "entities": [],
+                "lang_proportion": "more_eu"
+            }
+        ]
+    },
+    {
+        "domain": "social",
+        "intents": [
+            "social_quien_eres"
+        ],
+        "source_lang": "es",
+        "referent": "¿quién eres tú?",
+        "entities": [],
+        "code-switching": [
+            {
+                "text": "quién zara zu?",
+                "entities": [],
+                "lang_proportion": "balanced"
+            }
+        ]
+    }
+]
