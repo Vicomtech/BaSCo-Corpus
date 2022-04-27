@@ -76,6 +76,7 @@ For any further information about the corpus, please refer to the mentioned pape
 ## DOWNLOAD
 
 The utterances tagged as valid can be found in: https://github.com/Vicomtech/BaSCo-Corpus/blob/main/valid_utterances.json
+
 The utterances tagged as invalid can be found in: https://github.com/Vicomtech/BaSCo-Corpus/blob/main/invalid_utterances.json
 
 
