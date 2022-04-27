@@ -43,6 +43,44 @@ Language Understanding (NLU) models of several task-oriented bilingual chatbots.
 
 ## DATA STRUCTURE
 
+Here is a real example of an annotated utterance:
+
+{
+ "referent": "dónde está la casa del deporte?",
+  "source_lang": "es",
+  "domain": "administration",
+  "intents": [
+    "preguntar|ubicacion",
+    "informar|tipo-oficina"
+  ],
+  "entities": [
+    {
+      "entity": "tipo-oficina",
+      "value": "casa del deporte",
+      "normative_value": "deportes",
+      "start": 14,
+      "end": 29,
+      "type": "bounded"
+    }
+  ],
+  "code_switching": [
+    {
+      "text": "Casa de deporte non dago?",
+      "entities": [
+        {
+          "entity": "tipo-oficina",
+          "value": "Casa de deporte",
+          "normative_value": "deportes",
+          "start": 0,
+          "end": 14,
+          "type": "bounded"
+        }
+      ],
+      "lang_proportion": "balanced"
+    }
+  ]
+}
+
 
 ***
 
