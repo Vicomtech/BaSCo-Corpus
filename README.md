@@ -31,11 +31,39 @@ Language Understanding (NLU) models of several task-oriented bilingual chatbots.
 
 ## DATA CURATION AND ANNOTATION
 
+The curation phase involved removing duplicates and filtering out which utterances were or were not valid for the target Euskañol corpus. To do so, a set of guidelines to determine the validity of an utterance was established. An utterance would be considered valid if:
+
+• It is compliant with the task objective: the utterance is, to whatsoever extent, in a mixture of Spanish and Basque.
+
+• From a semantic point of view, its content remains the same as its reference text’s: the same NLU labels are valid for both the reference utterance and the new one
+in Euskañol. 
+
+• It sounds natural: it could be an utterance that a person would use in a real conversation in Euskañol, it does not sound artificial.
+
+Following these guidelines, only those utterances that were considered valid by at least 2/3 of the annotators would be included and annotated in the final corpus.
+
+After invalid samples were filtered out, the next phase involved the annotation of the valid utterances.
+
 ### NLU
+
+Semantically annotated with intents, entities, and their normative values when needed.
 
 ### CODE-SWITCHING
 
+An additional annotation level includes annotator’s perspectives on the proportion of Basque and Spanish constituting the new Euska ̃nol utterance. Three main classes were defined for this level:
+
+• more-es label: if it is considered that the utterance includes a larger proportion of Spanish than Basque.
+
+• more-eu label: if it is considered that the utterance includes a larger proportion of Basque than Spanish.
+
+• balanced label: if it is considered that the proportion of Basque and Spanish is more or less balanced.
+
+Annotators’ considerations on the language proportion were not necessarily based on number of words or even morphemes in each utterance, but it was rather a more
+general perspective on the whole sample based on native speaker intuition. In cases where annotators reached a tie between the three possible labels, the final label for the sample would be balanced.
+
 ### DOMAIN
+
+Given that the source data was obtained from task-oriented chatbots, a label referring to the source domain was automatically included. The possible domain labels are: administration, transport, fiscal, generic, or social
 
 
 ***
