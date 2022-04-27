@@ -10,11 +10,10 @@ Released April, 2022
     3.2. [Code-Switching](#code-switching)
     3.3. [Domain](#domain)
 3. [Data structure](#data-structure)
-4. [Corpus Statistics](#corpus-statistics)
-5. [License](#license)
-6. [Reference](#reference)
-7. [Download](#download)
-8. [Contact](#contact)
+4. [License](#license)
+5. [Reference](#reference)
+6. [Download](#download)
+7. [Contact](#contact)
 
 * * *
 
@@ -108,12 +107,6 @@ Here is a real example of an annotated utterance:
             }
           ]
     }
-
-
-***
-
-
-## CORPUS STATISTICS
 
 
 ***
